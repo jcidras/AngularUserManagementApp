@@ -1,0 +1,16 @@
+﻿<table class="table">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th></th>        
+    </tr>    
+    <tr ng-repeat="user in users">
+        <td>{{ user.FirstName }}</td>
+        <td>{{ user.LastName }}</td>
+        <td>{{ user.Email }}</td>
+        <td>{{ user.Age }}</td>
+        <td><a class="btn btn-info" href="#/edit/{{user.Id}}"><i class="icon-pencil"></i> Edit</a></td>
+    </tr>
+</table>

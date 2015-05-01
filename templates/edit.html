@@ -1,0 +1,37 @@
+﻿<form novalidate class="form-horizontal css-form">    
+    <input type="hidden" ng-model="user.Id" />
+    <div class="control-group">
+        <label class="control-label">First Name: </label>
+        <div class="controls">
+            <input class="control-field" id="txtFirstName" ng-model="user.FirstName" placeholder="Enter First Name Here" required/>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Last Name: </label>
+        <div class="controls">
+            <input class="control-field" id="txtLastName" ng-model="user.LastName" placeholder="Enter Last Name Here" required />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Email: </label>
+        <div class="controls">
+            <input class="control-field" id="txtEmail" ng-model="user.Email" placeholder="Enter Email Here" required />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Age: </label>
+        <div class="controls">
+            <input class="control-field" id="txtAge" ng-model="user.Age" placeholder="Enter Age Here" required />
+        </div>
+    </div>
+    <!-- Tests to see if the user object is null for create, not null for update -->
+    <div ng-if="user == null">
+        <input type="submit" ng-click="save()" value="Save" class="btn btn-primary" />
+        <a class="btn btn-default" href="#/">Cancel</a>
+    </div>
+    <div ng-if="user != null">
+        <input type="submit" id="update" ng-click="update()" value="Update" class="btn btn-primary" />
+        <button ng-click="delete(user.Id)" class="btn btn-danger"><i class="icon-trash"></i> Delete</button>
+        <a class="btn btn-default" href="#/">Cancel</a>
+    </div>    
+</form>

@@ -1,0 +1,114 @@
+﻿input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+/* Button Styles*/
+.btn {
+    display:inline-block;
+    cursor: pointer;
+    border-radius: 5px;   
+    font:14px 'Century Gothic';
+    color: white;
+    padding: 8px 16px;        
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+}
+
+.btn-default {
+    background-color: slategray;
+    color: black;
+}
+
+.btn-info {
+    background-color: #6AC0FA;
+}
+
+.btn-primary {
+    background-color: #2F79E9;
+}
+
+.btn-danger {
+    background-color: #FC171F;
+    color: black;
+}
+
+/* Button Events */
+.btn-default:hover {
+    background-color:lightslategray;
+}
+
+.btn-danger:hover {
+    background-color: #FA6A6F;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #63A2FF;
+    color: black;
+}
+
+.btn-info:hover {
+    background-color: #AEDFFF;
+    color: black;
+}
+/* Browser */
+.container {
+    min-width: 400px;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+/* Table */
+.table {
+    width:100%;
+}
+
+.table th {
+    font-weight:bolder;
+    font-family: 'Century Gothic'
+}
+
+.table td {
+    text-align:center;
+    width:auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* Form Controls */
+form {
+    margin-bottom: 20px;
+}
+
+.form-horizonal {
+    width:100%;
+}
+
+.control-label {
+    font: 14px 'Century Gothic'
+}
+
+.control-field {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* Error Catching */
+.css-form input.ng-invalid.ng-touched {
+    background-color: pink;
+    border: 1px solid red;
+}
+
+.css-form input.ng-valid.ng-touched {
+    background-color: white;    
+    border-radius: 5px;
+}
